@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&display=swap'); 
+
+/*
+    mainBackground: #ffffff
+    navbar/footer: #14213d
+    div-background: #e5e5e5
+    primary-text-color: #000000
+    header text color: #fca311
+    internal links color: #135578
+*/
+
+body{
+    min-height: 100vh;
+    font-family: "Inconsolata", monospace;
+    background-color: #ffffff;
+    color: #000000; 
+}
+
+nav{
+    background-color: #14213d;
+    box-shadow: 5px;
+    color: #fca311;
+}
+
+#nav-logo{
+    color: #fca311;
+    font-weight: 700;
+}
+#nav-item{
+    color: #fca311;
+}
+
+.nav-item:hover{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.intro{
+    height: 50vh;
+    flex: 1;
+}
+
+img{
+    max-height: 400px;
+    border-radius: 50%;
+}
+
+.text-section h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fca311;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.text-section a{
+    color: #135578;
+    text-decoration: none;
+}
+.text-section a:hover{
+    background-color: #135578;
+    color: #ffffff;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.links-section{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-section a{
+    text-decoration: none;
+    color: #fca311;
+}
+
+.btn{
+    background-color: #135578;
+    text-align: center;
+}
+
+@media(min-width: 750px){
+    .nav-item{
+        margin: 0 25px 0 25px;
+    }
+    .text-section{
+        margin: 0;
+        position: relative;
+        top: 25%;
+    }
+}
+
+@media(max-width: 500px){
+    .text-section{
+        padding: 20px;
+    }
+}
