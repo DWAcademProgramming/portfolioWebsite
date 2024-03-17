@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Inconsolata", monospace;
+    background-color: #ffffff;
+    color: #000000; 
+    padding: 10px;
+    font-size: 12px;
+    border-left: solid 3px #135578;
+}
+
+.msu{
+    color: #18453B;
+}
+
+.NW{
+    margin-top: 10px;
+    color: #4E2A84;
+}

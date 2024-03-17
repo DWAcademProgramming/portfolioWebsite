@@ -26,6 +26,16 @@ nav{
 main{
     min-height: 100vh;
 }
+section{
+    min-height: 80vh;
+}
+
+/*
+    General fixes
+*/
+.sectionMedium{
+    min-height: 50vh;
+}
 
 #nav-logo{
     color: #fca311;
@@ -44,11 +54,15 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
 }
 
+/*
+    Home Section
+*/
+
 .intro{
-    height: 50vh;
+    margin-top: 20vh;
+    height: 70vh;
     flex: 1;
 }
 
@@ -108,6 +122,85 @@ img{
 #fHover:hover{
     color: #fca311;
 }
+
+
+/*
+    Interests section
+*/
+
+.interestsIntro{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.interestsIntro h2{
+    overflow: hidden; 
+    white-space: nowrap;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fca311;
+    font-size: 3rem;
+    font-weight: 700;
+    animation: typing 3.5s steps(100, end), blink-caret .75s step-end;
+}
+
+.interestsIntro p{
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+    Skills page
+*/
+.redHeight{
+    max-height: 40vh;
+    margin-top: -10vh;
+}
+.skillsIntro{
+    min-height: 100vh;
+}
+.skillsIntro h2{
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    color: #fca311;
+}
+
+.skillsFocus{
+    min-height: 50vh;
+}
+
+.skillsFocus h2{
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+    color: #fca311;
+}
+
+.dshSdL{
+    border-right: #135578 dashed;
+}
+
+
+
 @media(min-width: 750px){
     .nav-item{
         margin: 0 25px 0 25px;
@@ -117,10 +210,48 @@ img{
         position: relative;
         top: 25%;
     }
+
+    .interestsIntro hr{
+        max-width: 80%;
+    }
+
+    .int-card{
+        max-width: 80%;
+    }
+
+    #sm-paragraph{
+        max-width: 70%;
+    }
+    #sm-paragraph-r{
+        max-width: 70%;
+        float: right;
+    }
+    .skillsFocus hr{
+        margin-top: 20px;
+    }
 }
 
 @media(max-width: 500px){
     .text-section{
         padding: 20px;
+    }
+
+    .links-section{
+        margin-top: 20vh;
+    }
+
+    .smMT{
+        margin-top: 5vh;
+    }
+
+    .dshBSM{
+        border-bottom: #14213d dashed;
+    }
+    .dshSdL{
+        border: none;
+    }
+
+    .skillsIntro{
+        font-size: 1.3em;
     }
 }
