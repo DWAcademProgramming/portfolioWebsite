@@ -23,6 +23,10 @@ nav{
     color: #fca311;
 }
 
+main{
+    min-height: 100vh;
+}
+
 #nav-logo{
     color: #fca311;
     font-weight: 700;
@@ -76,18 +80,34 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
+    margin-bottom: 20vh;
 }
 
 .links-section a{
     text-decoration: none;
+    color: #fca311;
+    vertical-align: middle;
+}
+.links-section i{
     color: #fca311;
 }
 
 .btn{
     background-color: #135578;
     text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
 }
 
+#fHover:hover{
+    color: #fca311;
+}
 @media(min-width: 750px){
     .nav-item{
         margin: 0 25px 0 25px;
